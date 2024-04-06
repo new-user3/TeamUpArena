@@ -20,13 +20,10 @@
         }
         .container {
             padding: 20px;
-            display: flex;
-            justify-content: center;
             overflow-x: auto; /* Allow horizontal scrolling if necessary */
         }
         .league-table {
-            width: 100%; /* Adjusted width to fit within the viewport */
-            max-width: 800px; /* Limiting maximum width to prevent excessive stretching */
+            width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
@@ -70,6 +67,16 @@
         .active {
             color: #FFFFFF;
             font-weight: bold;
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .league-table {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
