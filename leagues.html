@@ -22,9 +22,11 @@
             padding: 20px;
             display: flex;
             justify-content: center;
+            overflow-x: auto; /* Allow horizontal scrolling if necessary */
         }
         .league-table {
-            width: 80%;
+            width: 100%; /* Adjusted width to fit within the viewport */
+            max-width: 800px; /* Limiting maximum width to prevent excessive stretching */
             border-collapse: collapse;
             margin-top: 20px;
         }
